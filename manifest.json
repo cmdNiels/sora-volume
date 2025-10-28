@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json.schemastore.org/chrome-manifest.json",
+	"manifest_version": 3,
+	"name": "Sora Volume",
+	"description": "Control Sora video volume easily",
+	"version": "0.0.1",
+	"icons": {
+		"16": "icon/icon-16.png",
+		"48": "icon/icon-48.png",
+		"128": "icon/icon-128.png"
+	},
+	"action": {
+		"default_popup": "popup.html",
+		"default_title": "Sora Volume"
+	},
+	"permissions": [
+		"activeTab",
+		"scripting",
+		"storage"
+	],
+	"host_permissions": [
+		"https://sora.chatgpt.com/p/*",
+		"https://sora.chatgpt.com/d/*"
+	]
+}
