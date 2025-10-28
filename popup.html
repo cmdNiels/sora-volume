@@ -7,31 +7,61 @@
 	<title>Sora Volume Control</title>
 	<style>
 		body {
-			font-family: Arial, sans-serif;
 			margin: 0;
-			padding: 10px;
-			width: 200px;
-		}
-
-		.slider-container {
+			padding: 0;
 			display: flex;
-			flex-direction: column;
+			justify-content: center;
 			align-items: center;
+			height: 100vh;
+			background: linear-gradient(to bottom, #012659, #0968DA);
 		}
 
 		.slider {
-			width: 100%;
+			-webkit-appearance: none;
+			appearance: none;
+			width: 10rem;
+			height: 0.5rem;
+			background: #FFFFFF;
+			border-radius: 1rem;
+			outline: none;
+		}
+
+		.slider::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 1rem;
+			height: 1rem;
+			background: #6EB8FE;
+			border-radius: 999rem;
+			cursor: pointer;
+		}
+
+		.slider::-webkit-slider-thumb:hover {
+			background: #FFFFFF;
+		}
+
+		.slider::-moz-range-thumb {
+			width: 1rem;
+			height: 1rem;
+			background: #6EB8FE;
+			border: none;
+			border-radius: 999rem;
+			cursor: pointer;
+		}
+
+		.slider::-moz-range-thumb:hover {
+			background: #FFFFFF;
+		}
+
+		.slider::-moz-range-track {
+			background: transparent;
+			border: none;
 		}
 	</style>
 </head>
 
 <body>
-	<div class="slider-container">
-		<label for="volume-slider">Set Volume:</label>
-		<input type="range" id="volume-slider" class="slider" min="0" max="100" value="50">
-		<span id="volume-value">50%</span>
-	</div>
-
+	<input type="range" id="volume-slider" class="slider" min="0" max="100" value="50">
 	<script src="popup.js"></script>
 </body>
 

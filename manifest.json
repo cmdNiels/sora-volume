@@ -21,5 +21,16 @@
 	"host_permissions": [
 		"https://sora.chatgpt.com/p/*",
 		"https://sora.chatgpt.com/d/*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://sora.chatgpt.com/p/*",
+				"https://sora.chatgpt.com/d/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
 	]
 }

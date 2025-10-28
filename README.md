@@ -4,9 +4,9 @@ Lightweight Chrome extension that allows you to control the volume of the main v
 
 ## Installation
 1. Clone or download this repository.
-2. Open chrome://extensions (or edge://extensions) in a Chromium-based browser.
-3. Enable Developer mode.
-4. Click "Load unpacked" and select this repository's folder.
+2. Open `chrome://extensions` (Chrome), `edge://extensions` (Edge), or `about:debugging#/runtime/this-firefox` (Firefox).
+3. Enable Developer mode (not needed for Firefox).
+4. Click "Load unpacked" (Chrome/Edge) or "Load Temporary Add-on" (Firefox) and select this repository's folder.
 
 ## Usage
 1. Open a Sora page with a video (URL like `https://sora.chatgpt.com/p/...`).
